@@ -1,95 +1,77 @@
-# GitHub Pages Web App Template
+# Minerva University Web App Template 🌍🎓
 
-A template repository for building learning-oriented web software with Gemini CLI.
+**A high-fidelity, ethical-first template for building learning-oriented web applications.**
 
-Zero cost. No build step. No framework. Designed for GitHub Pages.
-
----
-
-## What's in this template
-
-```
-GEMINI.md              Project identity + Gemini's standing instructions (edit this first)
-SCRATCHPAD.md          Session state, milestones, open questions (living document)
-DECISIONS.md           Architecture decision record (append-only log)
-index.html             Starter HTML — replace placeholder content
-css/styles.css         Mobile-first CSS with custom properties
-js/app.js              Starter JavaScript — organized by feature area
-.gemini/
-  settings.json        Configures the session-start hook
-  hooks/
-    session-start.sh   Silently orients Gemini at the start of each session
-  commands/
-    milestone.md       /milestone — mark a milestone complete with values check
-    decision.md        /decision — log an architectural decision
-    status.md          /status   — quick project status summary
-```
+This repository is designed specifically for **Minerva University students, applicants, and staff**. It provides a professional, brand-aligned starting point for building web software that prioritizes human agency, data privacy, and deep learning—all powered by **Gemini CLI**.
 
 ---
 
-## Starting a new project
+## 🧭 The Minerva Approach
 
-**Step 1 — Fill in GEMINI.md**
+This isn't just a code template; it's a **guided development environment**. Every project built here follows the **Minerva AI Guardrails**:
 
-Open `GEMINI.md` and replace all `[bracketed placeholders]` with your project's specifics:
-- App name and purpose
-- Target audience
-- What human change or learning this enables
-- Your GitHub repo URL and Pages URL
-- Data/auth approach (localStorage? external API? none?)
-
-Do not change anything below the `---` divider — that section contains Gemini's standing instructions and the learning-orientation values you want preserved across every project.
-
-**Step 2 — Fill in SCRATCHPAD.md**
-
-In the `## Milestones` section, define M1, M2, and M3:
-- Write each milestone as a user-visible capability, not a technical task
-- Write acceptance criteria as things a real user could verify
-- Three milestones is enough to start — add more as you go
-
-**Step 3 — Update the Current State block**
-
-In `SCRATCHPAD.md`, update the "Current State" block to reflect that M1 is active and what the first actions are.
-
-**Step 4 — Push and enable GitHub Pages**
-
-Push to GitHub. In repository Settings → Pages, set the source to your `main` branch, root directory. Your app will be live at `https://[username].github.io/[repo-name]`.
-
-**Step 5 — Start coding**
-
-Open a Gemini CLI session. Gemini will silently read your context from the hook and be ready to work. Just tell it what to do.
+1.  **Human-Centered Learning**: AI is your "thinking partner," not a substitute. You remain the author and the decision-maker.
+2.  **Accountability**: You are responsible for every line of code and every user experience.
+3.  **Data Privacy (Zero-Trust)**: This template is configured to strictly avoid the processing of sensitive student data (PII).
+4.  **Radical Transparency**: All AI contributions are documented in a mandatory session log, and the app itself includes a visible "AI-Assisted" disclosure.
+5.  **Official Branding**: Includes the official Minerva University Fall 2025 colors (Obsidian, Bone, Clay) and typography standards out of the box.
 
 ---
 
-## How sessions work
+## 🚀 Getting Started (Step-by-Step)
 
-**At session start**: The `session-start.sh` hook runs automatically. It injects your `Gemini.md` and the "Current State" section from `SCRATCHPAD.md` into Gemini's context — silently, before your first message. Gemini knows where things stand without you having to explain.
+You don't need to be an expert in Markdown or CLI to start. Follow these steps:
 
-**During a session**: Gemini follows the standing instructions in `GEMINI.md`. Every feature is evaluated against the learning-orientation criteria before implementation. When Gemini marks something done, it updates `SCRATCHPAD.md`.
+### 1. Create your Repository
+Click the **"Use this template"** button on GitHub to create a copy in your own account.
 
-**At session end**: Gemini updates the "Current State" block in `SCRATCHPAD.md` and appends a session log entry. The next session starts exactly where this one left off.
+### 2. Enable Hosting
+Go to your repository **Settings** → **Pages**.
+- Set **Source** to "Deploy from a branch".
+- Select the `main` branch and `/ (root)` folder.
+- Click **Save**. Your app will be live at `https://[your-username].github.io/[repo-name]`.
+
+### 3. Start the Interactive Setup
+Open your terminal in this folder and start a Gemini session. Simply say:
+> *"I have a new project idea."*
+
+**Gemini will then walk you through a stepwise conversation to:**
+- Name your app and define its purpose.
+- Identify your target audience and the "human impact."
+- Plan your first three milestones (M1, M2, M3).
+- **Automatically update** `GEMINI.md` and `SCRATCHPAD.md` for you.
 
 ---
 
-## Slash commands
+## 🛠 Key Files & Workflow
 
-| Command | What it does |
-|---|---|
-| `/milestone` | Marks a milestone complete, runs learning-orientation check, updates SCRATCHPAD.md |
-| `/decision` | Logs an architectural decision to DECISIONS.md in the correct format |
-| `/status` | Quick summary of active milestone, next actions, and open questions |
+This repository uses three "living documents" to manage your project:
+
+-   **`GEMINI.md`**: Your project's identity and standing instructions. Gemini reads this first to understand your goals and constraints.
+-   **`SCRATCHPAD.md`**: Your active workspace. It tracks what you're working on right now, your next actions, and your session logs (including AI disclosures).
+-   **`DECISIONS.md`**: Your Architecture Decision Record (ADR). Every time you make a big choice, Gemini logs it here with a "Guardrails Alignment" check.
 
 ---
 
-## The values
+## ⌨️ Useful Commands
 
-Every feature built from this template is evaluated against six criteria:
+While working with Gemini CLI, you can use these shortcuts:
 
-1. **Does it deepen understanding?** Not just display information — invite engagement with ideas.
-2. **Does it invite participation?** Ask something of the user, not just deliver content to scroll past.
-3. **Does it support human agency?** Make people more capable, not more dependent.
-4. **Clarity over cleverness.** The simpler implementation, every time.
-5. **Accessible by default.** WCAG AA from the first line of code.
-6. **Responsive from the start.** Mobile-first. Test at 375px before 1440px.
+| Command | Purpose |
+| :--- | :--- |
+| `/status` | Get a quick summary of where your project stands. |
+| `/milestone` | Mark a stage as complete and run a "Values Check" (Learning, Agency, Privacy). |
+| `/decision` | Log a technical choice to `DECISIONS.md` with an ethical audit. |
 
-These aren't guidelines — they're standing instructions Gemini carries into every session from `GEMINI.md`. If a feature fails one of these criteria, Gemini flags it and proposes an alternative before proceeding.
+---
+
+## 🎨 Tech Stack (The "Minerva Simple" Stack)
+
+-   **Frontend**: Vanilla HTML5, CSS3, and JavaScript (No frameworks, no build steps).
+-   **Styling**: Official Minerva Brand Standards (Fall 2025).
+-   **Hosting**: GitHub Pages (Static, $0 cost).
+-   **Philosophy**: Clarity over cleverness. Accessible (WCAG AA) and Responsive by default.
+
+---
+
+**Ready to build something that matters?** Open your terminal and tell Gemini: *"Start a new project."*
