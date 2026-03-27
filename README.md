@@ -50,7 +50,7 @@ To work on your project and use Gemini CLI, you need to "clone" the repository t
 4.  Enter the folder:  
     `cd your-repo-name`
 
-*Note: Ensure you have [Git](https://git-scm.com/downloads) and [Gemini CLI]((https://github.com/google-gemini/gemini-cli)) installed before starting.*
+*Note: Ensure you have [Git](https://git-scm.com/downloads) and [Gemini CLI]((https://github.com/google-gemini/gemini-cli) installed before starting.*
 
 ### 4. Start the Interactive Setup
 Once you are inside your project folder in the terminal, start a Gemini session by typing `gemini`. Simply say:
