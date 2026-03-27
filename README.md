@@ -31,8 +31,29 @@ Go to your repository **Settings** → **Pages**.
 - Select the `main` branch and `/ (root)` folder.
 - Click **Save**. Your app will be live at `https://[your-username].github.io/[repo-name]`.
 
-### 3. Start the Interactive Setup
-Open your terminal in this folder and start a Gemini session. Simply say:
+### 3. Clone to your Computer
+To work on your project and use Gemini CLI, you need to "clone" the repository to your local machine.
+
+#### 🍎 macOS & 🐧 Linux
+1.  Open **Terminal**.
+2.  Navigate to where you want to save your project (e.g., `cd Documents`).
+3.  Run the clone command:  
+    `git clone https://github.com/your-username/your-repo-name.git`
+4.  Enter the folder:  
+    `cd your-repo-name`
+
+#### 🪟 Windows
+1.  Open **PowerShell** or **Git Bash**.
+2.  Navigate to your folder (e.g., `cd ~\Documents`).
+3.  Run the clone command:  
+    `git clone https://github.com/your-username/your-repo-name.git`
+4.  Enter the folder:  
+    `cd your-repo-name`
+
+*Note: Ensure you have [Git](https://git-scm.com/downloads) and [Gemini CLI](https://github.com/google/gemini-cli) installed before starting.*
+
+### 4. Start the Interactive Setup
+Once you are inside your project folder in the terminal, start a Gemini session by typing `gemini`. Simply say:
 > *"I have a new project idea."*
 
 **Gemini will then walk you through a stepwise conversation to:**
